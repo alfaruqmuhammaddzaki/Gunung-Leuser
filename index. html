@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunung Leuser — Jejak Sunyi di Ujung Sumatra</title>
+  <style>
+    :root {
+      --bg-primary: #121f17;
+      --bg-card: #1a2e22;
+      --text-main: #f3efe6;
+      --text-muted: #b5aca0;
+      --accent-amber: #d97706;
+      --accent-green: #2d5a3f;
+      --border-color: #2b4634;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.8;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 3rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--accent-amber);
+      font-size: 1.15rem;
+      font-style: italic;
+      font-family: Georgia, serif;
+    }
+
+    article section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.85rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-amber);
+      border-radius: 50%;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    p strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Image Slot Styling */
+    .image-slot {
+      background-color: var(--bg-card);
+      border: 2px dashed var(--border-color);
+      border-radius: 12px;
+      padding: 3.5rem 2rem;
+      text-align: center;
+      margin: 2.5rem 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .image-slot:hover {
+      border-color: var(-accent-amber);
+      background-color: #1f3528;
+    }
+
+    .image-slot .slot-label {
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-family: monospace;
+      letter-spacing: 0.05em;
+    }
+
+    .image-slot .slot-caption {
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--accent-amber);
+      font-style: italic;
+      font-family: Georgia, serif;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      font-family: Georgia, serif;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      body {
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Gunung Leuser</h1>
+      <p class="subtitle">“Benteng sunyi di ujung Sumatra, tempat napas bumi bersemi dalam keabadian.”</p>
+    </header>
+
+    <main>
+      <article>
+        <section>
+          <p>Di antara hamparan kabut pagi yang memeluk lembah, Taman Nasional Gunung Leuser berdiri sebagai salah satu
+            ekosistem paling megah dan kompleks di muka bumi. Bukan sekadar kawasan konservasi, Leuser adalah rumah bagi
+            harmoni liar yang purba—tempat di mana cerita-cerita alam ditulis langsung oleh angin, gemercik sungai, dan
+            lebatnya hutan hujan tropis.</p>
+
+          <!-- SLOT GAMBAR 1 -->
+          <div class="image-slot">
+            <div class="slot-label"> Pemandangan Leuser</div>
+            <img src="vibes.png" width="550" height="300">
+
+          </div>
+  </div>
+  </section>
+
+  <section>
+    <h2>Simfoni Kehidupan yang Tersisa</h2>
+    <p>Leuser adalah satu-satunya tempat di dunia di mana empat mamalia besar—<strong>orangutan sumatra, harimau
+        sumatra, gajah sumatra, dan badak sumatra</strong>—berbagi satu habitat yang sama dalam kebebasan mutlak.
+      Di bawah naungan pohon-pohon raksasa berumur ratusan tahun, setiap jengkal tanah menyimpan denyut kehidupan
+      yang rapuh sekaligus tangguh.</p>
+
+    <div class="image-slot">
+      <div class="slot-label">[ Flora Endemik Leuser ]</div>
+      <img src="dzaki.png" width="550" height="350">
+      <img src="hewan.png" width="550" height="350">
+    </div>
+
+    <p>Namun, di balik keindahannya tersimpan keheningan yang menuntut penjagaan. Aliran sungainya menghidupi
+      jutaan jiwa di sekitarnya, sementara kanopi hutannya menyerap karbon demi menjaga kestabilan napas bumi dari
+      perubahan zaman.</p>
+  </section>
+
+  <section>
+    <h2>Catatan Perjalanan & Perenungan</h2>
+    <p>Menjelajahi atau sekadar mengenang Leuser lewat tulisan adalah pengingat bahwa manusia bukanlah pusat dari
+      segalanya. Ada keindahan agung yang tercipta jauh sebelum peradaban modern menjejakkan kaki—dan tugas kita
+      adalah memastikan keindahan itu tidak sekadar menjadi kenangan dalam arsip sejarah.</p>
+
+    <div class="image-slot">
+      <div class="slot-label">[Suasana Senja]</div>
+      <img src="sunset.png" width="550" height="350">
+    </div>
+    </div>
+  </section>
+  </article>
+  </main>
+
+  <footer>
+    <p>Muhammad Dzaki Alfaruq.</p>
+  </footer>
+  </div>
+
+</body>
+
+</html>
